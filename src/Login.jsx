@@ -1,6 +1,10 @@
 import './login.css'
 import MyNotesLogo from './assets/MyNotesLogo.png'
 import { useForm } from "react-hook-form";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+// import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+
+// const element = <FontAwesomeIcon icon={faEnvelope} />
 
 const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
@@ -16,13 +20,13 @@ const Login = () => {
       </header>
 
       <main className='container-form-login'>
-        <form onSubmit={handleSubmit(onSubmit)}>
+        <form className='login-form'onSubmit={handleSubmit(onSubmit)}>
           {/* Revisar si necesitamos agregar value y onChange*/}
-          <input type='email'{...register('email', { required: true })} placeholder='Email' />
+          <input className='input-login'type='email'{...register('email', { required: true })} placeholder='Email' />
           {errors.email && <p>This file is required</p>}
-          <input type='password'{...register('password', { required: true })} placeholder='Password' />
+          <input className='input-login'type='password'{...register('password', { required: true })} placeholder='Password' />
           {errors.password && <p>This file is required</p>}
-          <input type="submit" />
+          <input className='btn-login-submit' type="submit" />
         </form>
 
       </main>

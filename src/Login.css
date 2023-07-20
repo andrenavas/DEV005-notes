@@ -32,3 +32,32 @@
   display: flex;
   justify-content: flex-start;
 }
+.login-form{
+    background-color:rgba(241, 241, 241, 1);
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 200px;
+    justify-content: center;
+    gap: 10%;
+    padding: 2%;
+    border-radius: 20px;
+
+}
+.container-form-login{
+    background-color: green;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.input-login{
+    width: 343px;
+    height: 52px;
+    border: 1px solid black;
+}
+.btn-login-submit{
+    border-radius: 20px;
+    width: 343px;
+
+}
