@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { loginApp } from './lib/loginAuth.js'
 import { useNavigate } from 'react-router-dom';
 
+
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
 
@@ -14,8 +15,13 @@ const Login = () => {
   const { register, handleSubmit, formState: { errors } } = useForm();
   const onSubmit = data => {
     console.log(data)
-    loginApp(data.email, data.password, console.error);
-    navigateTo('/wall')
+    loginApp(data.email, data.password, console.error)
+    .then((loginSuccessful) => {
+      if(loginSuccessful){
+        navigateTo('/wall')
+      }
+      
+    })
   }
 
   return (
