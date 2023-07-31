@@ -38,17 +38,13 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  height: 600px;
+  height: 700px;
   flex-direction: column;
   align-items: center;
   gap: 5%;
 }
 
-/* .btn-login-submit{
-      background-color:rgba(255, 179, 71, 1);
-      color: white;
-  } */
-.container-post-wall {
+.container-notes-wall {
   display: flex;
   flex-direction: column;
   /* background-color: aquamarine; */
@@ -83,4 +79,17 @@
   color:white;
   display: flex;
   flex-direction: column;
+}
+
+.btn-add-note{
+  background-color: rgba(255, 179, 71, 1);
+  padding: 1%;
+  width: 70px;
+  height: 70px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: -0.1em 0.1em 0.8em 0.05em #fffff9;
+  position: absolute;
+  bottom: 60px;
+  right: 40px;
 }
