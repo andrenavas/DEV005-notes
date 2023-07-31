@@ -2,16 +2,16 @@ import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { app } from "./firebase.js"
 
 // Initialize Firebase Authentication and get a reference to the service
- const auth = getAuth(app);
- export const loginApp = (email, password, loginError) => {
- return signInWithEmailAndPassword(auth,email,password)
-.then((userCredential) => {
-    const user = userCredential.user;
-    console.log(user)
-    return true
-  })
-  .catch((error) => {
-    password = '';
+const auth = getAuth(app);
+export const loginApp = (email, password, loginError) => {
+  return signInWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      const user = userCredential.user;
+      console.log(user)
+      return true
+    })
+    .catch((error) => {
+      password = '';
       // Posibles errores de autenticación
       if (error.code === 'auth/wrong-password') {
         loginError('Contraseña incorrecta');
@@ -27,5 +27,5 @@ import { app } from "./firebase.js"
         loginError('Ingresa los datos requeridos');
       }
       return false
-  });
- }
+    });
+}

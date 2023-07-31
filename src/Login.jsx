@@ -3,6 +3,7 @@ import MyNotesLogo from './assets/MyNotesLogo.png'
 import { useForm } from "react-hook-form";
 import { loginApp } from './lib/loginAuth.js'
 import { useNavigate } from 'react-router-dom';
+import { loginWithGoogle } from './lib/googleAuth';
 
 
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -20,7 +21,15 @@ const Login = () => {
       if(loginSuccessful){
         navigateTo('/wall')
       }
-      
+    })
+  }
+
+  const loginGoogle = () => {
+    loginWithGoogle()
+    .then((loginSuccessful) => {
+      if(loginSuccessful){
+        navigateTo('/wall')
+      }
     })
   }
 
@@ -45,7 +54,7 @@ const Login = () => {
         <section className='container-register-google'>
           <span className='text-span'>¿Do not have an account yet?</span>
           <a className='text-span link-to-register'>Create an account here!</a>
-          <button className='btn-all btn-login-google'>LOG IN WITH GOOGLE</button>
+          <button className='btn-all btn-login-google' onClick={loginGoogle}>LOG IN WITH GOOGLE</button>
         </section>
 
       </main>
