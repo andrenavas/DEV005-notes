@@ -8,6 +8,7 @@ import './index.css'
 import Login from './Login.jsx'
 import Wall from './Wall.jsx'
 import ErrorPage from './error-page';
+import Register from './Register.jsx';
 
 
 const router = createBrowserRouter([
@@ -19,6 +20,10 @@ const router = createBrowserRouter([
   {
     path: "/wall",
     element: <Wall/>,
+  },
+  {
+    path: "/register",
+    element: <Register/>,
   },
 ]);
 

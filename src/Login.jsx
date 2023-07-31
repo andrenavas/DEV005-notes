@@ -33,6 +33,10 @@ const Login = () => {
     })
   }
 
+  const navigateToRegister = () => {
+    navigateTo('/register');
+  }
+
   return (
     <div className='login-view'>
       <header className='header-login'>
@@ -53,14 +57,10 @@ const Login = () => {
         </form>
         <section className='container-register-google'>
           <span className='text-span'>¿Do not have an account yet?</span>
-          <a className='text-span link-to-register'>Create an account here!</a>
+          <a className='text-span link-to-register' onClick={navigateToRegister}>Create an account here!</a>
           <button className='btn-all btn-login-google' onClick={loginGoogle}>LOG IN WITH GOOGLE</button>
         </section>
-
       </main>
-
-
-
     </div>
   )
 }

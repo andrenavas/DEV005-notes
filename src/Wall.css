@@ -80,4 +80,7 @@
   position: absolute;
   top: 51px;
   right: 40px;
+  color:white;
+  display: flex;
+  flex-direction: column;
 }
