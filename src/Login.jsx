@@ -24,7 +24,8 @@ const Login = () => {
     })
   }
 
-  const loginGoogle = () => {
+  const loginGoogle = (event) => {
+    event.preventDefault();
     loginWithGoogle()
     .then((loginSuccessful) => {
       if(loginSuccessful){
