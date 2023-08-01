@@ -1,4 +1,4 @@
-import './login.css'
+import './Login.css'
 import MyNotesLogo from './assets/MyNotesLogo.png'
 import { useForm } from "react-hook-form";
 import { loginApp } from './lib/loginAuth.js'

@@ -1,4 +1,4 @@
-import './wall.css'
+import './Wall.css'
 import MyNotesLogo from './assets/MyNotesLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faRightFromBracket, faPlus } from '@fortawesome/free-solid-svg-icons'
