@@ -83,15 +83,6 @@
     gap: 10%;
 }
 
-.btn-all {
-    border-radius: 20px;
-    height: 52px;
-    width: 343px;
-    font-size: 18px;
-    border: none;
-    font-weight: bold;
-}
-
 .text-span-register {
     color: white;
 }

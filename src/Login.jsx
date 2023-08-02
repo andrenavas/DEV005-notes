@@ -51,14 +51,17 @@ const Login = () => {
         <form className='login-form'onSubmit={handleSubmit(onSubmit)}>
           {/* Revisar si necesitamos agregar value y onChange*/}
           <input className='input-login'type='email'{...register('email', { required: true })} placeholder='EMAIL' />
-          {errors.email && <p>This file is required</p>}
+          {errors.email && <p className='error-login'>This file is required</p>}
           <input className='input-login'type='password'{...register('password', { required: true })} placeholder='PASSWORD' />
-          {errors.password && <p>This file is required</p>}
+          {errors.password && <p className='error-login'>This file is required</p>}
           <input className='btn-all btn-login-submit' type="submit" value="LOG IN" />
+          <div className='container-login-span'>
+            <span className='text-span'>¿Do not have an account yet?</span>
+            <a className='text-span link-to-register' onClick={navigateToRegister}>Create an account NOW! It is free!</a>
+          </div>
         </form>
         <section className='container-register-google'>
-          <span className='text-span'>¿Do not have an account yet?</span>
-          <a className='text-span link-to-register' onClick={navigateToRegister}>Create an account here!</a>
+        <span className='text-span'>- or -</span>
           <button className='btn-all btn-login-google' onClick={loginGoogle}>LOG IN WITH GOOGLE</button>
         </section>
       </main>
