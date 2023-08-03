@@ -1,10 +1,12 @@
 import './Notes.css'
 
-const Notes = () => {
+const Notes = ({content}) => {
 
 
     return (
         <div className='notes-container'>
+                  <p>{content}</p>
+
 
         </div>
     )
