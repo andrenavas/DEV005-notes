@@ -37,11 +37,12 @@ const Register = () => {
           <input className='input-register'type='password'{...register('password', { required: true })} placeholder='PASSWORD' />
           {errors.password && <p>This file is required</p>}
           <input className='btn-all btn-register-submit' type="submit" value="REGISTER" />
-        </form>
         <section className='container-register-login'>
           <span className='text-span-register'>Do you have an account already?</span>
           <a className='text-span link-to-login' onClick={navigateToLogin}>Go back to login!</a>
         </section>
+        </form>
+        
 
       </main>
 
