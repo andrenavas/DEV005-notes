@@ -37,6 +37,7 @@ const Wall = () => {
         </div>
       </header>
       <main className='container-wall'>
+      <div className='input-note'>HOLA</div>
         <section className='container-notes-wall'>
           <span className='text-span-wall'>Developers working ...</span>
           {notes.length > 0 ? (

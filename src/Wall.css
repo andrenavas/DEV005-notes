@@ -95,3 +95,13 @@
   bottom: 60px;
   right: 40px;
 }
+.input-note{
+  color: white;
+  width: 300px;
+  height: 20%;
+  /* background-color: yellow; */
+  border: 2px solid white;
+  padding: 3%;
+  font-size: 16px;
+  overflow-wrap: break-word;
+}
