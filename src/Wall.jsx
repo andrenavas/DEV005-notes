@@ -1,13 +1,15 @@
 import './Wall.css'
 import MyNotesLogo from './assets/MyNotesLogo.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faRightFromBracket, faPlus } from '@fortawesome/free-solid-svg-icons'
+import { faRightFromBracket} from '@fortawesome/free-solid-svg-icons'
 import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
+import  NotesModal  from './modal.jsx'
 import Notes from './Notes.jsx'
 
 const logoutIcon = <FontAwesomeIcon icon={faRightFromBracket} size="2xl" style={{ color: "#FFFF", }} />
-const addIcon = <FontAwesomeIcon icon={faPlus} size="2xl" style={{ color: "#FFFF", }} />
+// const sendIcon = <FontAwesomeIcon icon={faPaperPlane} size="l" style={{ color: "#FFFF", }} />
+
 const Wall = () => {
   const navigateTo = useNavigate();
   //crear el arreglo vacío que va a contener las notas
@@ -37,7 +39,6 @@ const Wall = () => {
         </div>
       </header>
       <main className='container-wall'>
-      <div className='input-note'>HOLA</div>
         <section className='container-notes-wall'>
           <span className='text-span-wall'>Developers working ...</span>
           {notes.length > 0 ? (
@@ -46,7 +47,7 @@ const Wall = () => {
             <p>No notes yet.</p>
           )}
         </section>
-        <button className='btn-add-note' onClick={addNewNote} >{addIcon}</button>
+        <NotesModal/>
 
       </main>
     </div>

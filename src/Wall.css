@@ -82,26 +82,3 @@
   display: flex;
   flex-direction: column;
 }
-
-.btn-add-note{
-  background-color: rgba(255, 179, 71, 1);
-  padding: 1%;
-  width: 70px;
-  height: 70px;
-  border-radius: 100px;
-  border: none;
-  box-shadow: -0.1em 0.1em 0.8em 0.05em #fffff9;
-  position: absolute;
-  bottom: 60px;
-  right: 40px;
-}
-.input-note{
-  color: white;
-  width: 300px;
-  height: 20%;
-  /* background-color: yellow; */
-  border: 2px solid white;
-  padding: 3%;
-  font-size: 16px;
-  overflow-wrap: break-word;
-}

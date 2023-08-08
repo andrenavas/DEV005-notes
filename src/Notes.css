@@ -3,3 +3,17 @@
     height: 15%;
     background-color: red;
 }
+.container-btn-add-note-modal{
+    background-color: green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20%;
+}
+.container-input-textarea-add-note-modal{
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30%;
+}

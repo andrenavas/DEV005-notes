@@ -1,0 +1,12 @@
+.btn-open-modal{
+    background-color: rgba(255, 179, 71, 1);
+    padding: 1%;
+    width: 70px;
+    height: 70px;
+    border-radius: 100px;
+    border: none;
+    box-shadow: -0.1em 0.1em 0.8em 0.05em #fffff9;
+    position: absolute;
+    bottom: 60px;
+    right: 40px;
+  }
